@@ -1,0 +1,138 @@
+{
+  "identity": {
+    "name": "Dolgozó CRM",
+    "tone": "Professional, Efficient, Modern, Trustworthy",
+    "archetype": "The Digital Architect (Performance + Precision)",
+    "keywords": ["Clean", "Purple-Blue", "Horizontal", "Organized"]
+  },
+  "typography": {
+    "font_family": {
+      "headings": "\"Manrope\", \"Inter\", sans-serif",
+      "body": "\"Inter\", system-ui, sans-serif",
+      "mono": "\"JetBrains Mono\", monospace"
+    },
+    "scale": {
+      "h1": "text-4xl md:text-5xl font-bold tracking-tight",
+      "h2": "text-3xl font-semibold tracking-tight",
+      "h3": "text-2xl font-semibold tracking-tight",
+      "body": "text-base font-normal leading-relaxed",
+      "small": "text-sm font-medium text-muted-foreground"
+    },
+    "installation": "Add <link href=\"https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap\" rel=\"stylesheet\"> to public/index.html"
+  },
+  "colors": {
+    "theme_strategy": "Modern Purple-Blue (Lila-Kék)",
+    "palette": {
+      "light": {
+        "background": "240 25% 98%",
+        "foreground": "240 10% 3.9%",
+        "card": "0 0% 100%",
+        "card_foreground": "240 10% 3.9%",
+        "popover": "0 0% 100%",
+        "popover_foreground": "240 10% 3.9%",
+        "primary": "250 85% 60%",
+        "primary_foreground": "0 0% 98%",
+        "secondary": "250 20% 96%",
+        "secondary_foreground": "250 60% 40%",
+        "muted": "240 5% 96%",
+        "muted_foreground": "240 4% 46%",
+        "accent": "250 20% 96%",
+        "accent_foreground": "250 85% 60%",
+        "destructive": "0 84% 60%",
+        "destructive_foreground": "0 0% 98%",
+        "border": "240 6% 90%",
+        "input": "240 6% 90%",
+        "ring": "250 85% 60%"
+      },
+      "dark": {
+        "background": "240 10% 4%",
+        "foreground": "0 0% 98%",
+        "card": "240 10% 6%",
+        "card_foreground": "0 0% 98%",
+        "popover": "240 10% 6%",
+        "popover_foreground": "0 0% 98%",
+        "primary": "250 85% 65%",
+        "primary_foreground": "240 5% 4%",
+        "secondary": "240 4% 16%",
+        "secondary_foreground": "0 0% 98%",
+        "muted": "240 4% 16%",
+        "muted_foreground": "240 5% 65%",
+        "accent": "240 4% 16%",
+        "accent_foreground": "0 0% 98%",
+        "destructive": "0 62% 30%",
+        "destructive_foreground": "0 0% 98%",
+        "border": "240 4% 16%",
+        "input": "240 4% 16%",
+        "ring": "250 85% 65%"
+      }
+    },
+    "semantic_tags": {
+      "status_success": "bg-emerald-50 text-emerald-700 border-emerald-200",
+      "status_warning": "bg-amber-50 text-amber-700 border-amber-200",
+      "status_error": "bg-rose-50 text-rose-700 border-rose-200",
+      "status_neutral": "bg-slate-100 text-slate-700 border-slate-200",
+      "status_purple": "bg-purple-50 text-purple-700 border-purple-200"
+    }
+  },
+  "layout_strategy": {
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "dashboard_grid": "grid grid-cols-1 md:grid-cols-12 gap-6",
+    "list_view": "flex flex-col gap-3",
+    "card_style": "bg-card rounded-xl border border-border/60 shadow-sm hover:shadow-md transition-all duration-200"
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-6 py-2.5 font-semibold shadow-lg shadow-primary/20 transition-all active:scale-95",
+      "secondary": "bg-secondary text-secondary-foreground hover:bg-secondary/80 rounded-full px-6 py-2.5 font-medium transition-all active:scale-95",
+      "outline": "border-2 border-primary/20 bg-transparent hover:bg-primary/5 text-primary rounded-full px-6 py-2.5 font-medium transition-all",
+      "ghost": "hover:bg-accent hover:text-accent-foreground rounded-lg px-4 py-2"
+    },
+    "inputs": {
+      "base": "flex h-11 w-full rounded-lg border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 transition-all duration-200 focus:border-primary/50"
+    },
+    "cards": {
+      "dashboard_metric": "p-6 rounded-2xl bg-white border border-slate-100 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.1)] hover:-translate-y-1 transition-transform duration-300",
+      "worker_row": "group relative flex items-center gap-4 p-4 rounded-xl bg-white border border-slate-100 shadow-sm hover:shadow-md hover:border-primary/20 transition-all duration-200"
+    },
+    "tags": {
+      "base": "inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2",
+      "project_status": "flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-slate-50 border border-slate-200"
+    }
+  },
+  "visual_assets": {
+    "login_background": "https://images.unsplash.com/photo-1754738381739-5efb94a4525b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDZ8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMG1vZGVybiUyMGNvcnBvcmF0ZSUyMGdlb21ldHJpYyUyMHNoYXBlcyUyMHB1cnBsZSUyMGJsdWUlMjBiYWNrZ3JvdW5kfGVufDB8fHx8MTc3MTQ5MjkyMXww&ixlib=rb-4.1.0&q=85",
+    "logo_placeholder": "https://via.placeholder.com/150x40?text=DolgozoCRM",
+    "icons_library": "lucide-react"
+  },
+  "motion": {
+    "page_transition": "animate-in fade-in slide-in-from-bottom-4 duration-500 ease-out",
+    "hover_lift": "hover:-translate-y-1 hover:shadow-lg transition-all duration-300 ease-out",
+    "list_stagger": "animate-in fade-in slide-in-from-bottom-2 duration-300 fill-mode-backwards"
+  },
+  "instructions_to_main_agent": {
+    "file_structure": "Use .js extension for all React components. Use Shadcn components from /components/ui but customize their styles via className props according to the guidelines.",
+    "state_management": "Use React Context or simple useState for MVP state. No Redux unless necessary.",
+    "routing": "Use react-router-dom v6+. Ensure protected routes for Admin/User roles.",
+    "styling": "Use Tailwind CSS exclusively. Avoid inline styles.",
+    "accessibility": "Ensure all form inputs have associated labels. Use semantic HTML.",
+    "testing": "Add data-testid to all interactive elements (buttons, inputs, links)."
+  },
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "You tend to converge toward generic outputs. Avoid this.",
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients.",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur) for sticky headers.",
+    "You MUST NOT apply universal transition. Eg: `transition: all`. This results in breaking transforms. Always add transitions for specific interactive elements.",
+    "You MUST NOT center align the app container, ie do not add `.App { text-align: center; }` in the css file.",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations & color relevant to the app style.",
+    "NEVER: use AI assistant Emoji characters like 🤖🧠 etc for icons.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Main agent relies on these image URLs. Missing categories = main agent will use placeholder text which is FORBIDDEN.",
+    "Prioritize using pre-existing components from src/components/ui when applicable.",
+    "Components MUST use named exports (export const ComponentName = ...).",
+    "Pages MUST use default exports (export default function PageName() {...}).",
+    "Use `sonner` for toasts."
+  ]
+}

@@ -1,0 +1,72 @@
+/* App.css - Dolgozó CRM styles */
+
+/* Remove default centering */
+.App {
+  min-height: 100vh;
+}
+
+/* Card hover effects */
+.worker-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.worker-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px -5px rgba(99, 102, 241, 0.15);
+}
+
+/* Status badge colors */
+.status-jelentkezett { background-color: #dbeafe; color: #1e40af; border-color: #93c5fd; }
+.status-megerositve { background-color: #dcfce7; color: #166534; border-color: #86efac; }
+.status-dolgozik { background-color: #d1fae5; color: #065f46; border-color: #6ee7b7; }
+.status-megfelelt { background-color: #ecfdf5; color: #047857; border-color: #a7f3d0; }
+.status-nem-felelt-meg { background-color: #fef2f2; color: #991b1b; border-color: #fca5a5; }
+.status-lemondta { background-color: #fef3c7; color: #92400e; border-color: #fcd34d; }
+.status-nem-jelent-meg { background-color: #f3f4f6; color: #374151; border-color: #d1d5db; }
+
+/* Category colors */
+.category-felvitt { background-color: #dbeafe; color: #1e40af; }
+.category-hideg { background-color: #dcfce7; color: #166534; }
+.category-urlap { background-color: #fed7aa; color: #9a3412; }
+.category-allas { background-color: #e9d5ff; color: #7c3aed; }
+.category-ingazo { background-color: #f3f4f6; color: #374151; }
+.category-szallasos { background-color: #fecaca; color: #991b1b; }
+
+/* Sidebar transitions */
+.sidebar-link {
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+/* Input focus states */
+input:focus, select:focus, textarea:focus {
+  outline: none;
+}
+
+/* Button press effect */
+button:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+/* Table row hover */
+.table-row-hover:hover {
+  background-color: hsl(var(--muted) / 0.5);
+}
+
+/* Glass morphism header */
+.glass-header {
+  backdrop-filter: blur(16px);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Project status history */
+.project-status-item {
+  transition: opacity 0.2s ease;
+}
+
+.project-status-item:not(:first-child) {
+  opacity: 0.7;
+}
+
+.project-status-item:not(:first-child):hover {
+  opacity: 1;
+}
